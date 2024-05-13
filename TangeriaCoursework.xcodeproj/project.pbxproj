@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A015E4B2BEF6F7A00419F7F /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A015E4A2BEF6F7A00419F7F /* SignIn.swift */; };
+		3A0B6D542BF264C1002FE984 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B6D532BF264C1002FE984 /* SessionStore.swift */; };
+		3A0B6D562BF2690A002FE984 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B6D552BF2690A002FE984 /* .gitignore */; };
+		3AD5C9A72BECE9A800475DB9 /* TangeriaCourseworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9A62BECE9A800475DB9 /* TangeriaCourseworkApp.swift */; };
+		3AD5C9A92BECE9A800475DB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9A82BECE9A800475DB9 /* ContentView.swift */; };
+		3AD5C9AB2BECE9AA00475DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5C9AA2BECE9AA00475DB9 /* Assets.xcassets */; };
+		3AD5C9AF2BECE9AA00475DB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5C9AE2BECE9AA00475DB9 /* Preview Assets.xcassets */; };
+		3AD5C9B72BECED2A00475DB9 /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5C9B62BECED2A00475DB9 /* PoppinsRegular.ttf */; };
+		3AD5C9BA2BED04E000475DB9 /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5C9B92BED04E000475DB9 /* PoppinsBold.ttf */; };
+		3AD5C9BE2BED0F0500475DB9 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9BD2BED0F0500475DB9 /* GetStarted.swift */; };
+		3AD5C9C12BED1AC400475DB9 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9C02BED1AC400475DB9 /* Onboarding.swift */; };
+		3AF78D452BEF801300556657 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D442BEF801300556657 /* ForgotPassword.swift */; };
+		3AF78D472BEF802F00556657 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D462BEF802F00556657 /* Signup.swift */; };
+		3AF78D492BEF846B00556657 /* ResetSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D482BEF846B00556657 /* ResetSent.swift */; };
+		3AF78D4E2BEF8D7400556657 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3AF78D4D2BEF8D7400556657 /* FirebaseAuth */; };
+		3AF78D512BEF920D00556657 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D502BEF920D00556657 /* AuthenticationManager.swift */; };
+		3AF78D532BEFA46900556657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AF78D522BEFA46900556657 /* GoogleService-Info.plist */; };
+		3AF78D562BEFA81E00556657 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3AF78D552BEFA81E00556657 /* GoogleSignIn */; };
+		3AF78D582BEFA81E00556657 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AF78D572BEFA81E00556657 /* GoogleSignInSwift */; };
+		3AF78D5B2BEFAA8300556657 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D5A2BEFAA8300556657 /* Utilities.swift */; };
+		3AF78D5D2BEFB19100556657 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78D5C2BEFB19100556657 /* SignInGoogleHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A015E4A2BEF6F7A00419F7F /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		3A0B6D532BF264C1002FE984 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		3A0B6D552BF2690A002FE984 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3AD5C9A32BECE9A800475DB9 /* TangeriaCoursework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TangeriaCoursework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD5C9A62BECE9A800475DB9 /* TangeriaCourseworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangeriaCourseworkApp.swift; sourceTree = "<group>"; };
+		3AD5C9A82BECE9A800475DB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AD5C9AA2BECE9AA00475DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AD5C9AC2BECE9AA00475DB9 /* TangeriaCoursework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TangeriaCoursework.entitlements; sourceTree = "<group>"; };
+		3AD5C9AE2BECE9AA00475DB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AD5C9B62BECED2A00475DB9 /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
+		3AD5C9B82BECEF2000475DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3AD5C9B92BED04E000475DB9 /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PoppinsBold.ttf; path = ../../../../../Downloads/Poppins/PoppinsBold.ttf; sourceTree = "<group>"; };
+		3AD5C9BD2BED0F0500475DB9 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		3AD5C9C02BED1AC400475DB9 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		3AF78D442BEF801300556657 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		3AF78D462BEF802F00556657 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		3AF78D482BEF846B00556657 /* ResetSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetSent.swift; sourceTree = "<group>"; };
+		3AF78D502BEF920D00556657 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		3AF78D522BEFA46900556657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3AF78D5A2BEFAA8300556657 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3AF78D5C2BEFB19100556657 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AD5C9A02BECE9A800475DB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF78D582BEFA81E00556657 /* GoogleSignInSwift in Frameworks */,
+				3AF78D4E2BEF8D7400556657 /* FirebaseAuth in Frameworks */,
+				3AF78D562BEFA81E00556657 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AD5C99A2BECE9A800475DB9 = {
+			isa = PBXGroup;
+			children = (
+				3AD5C9A52BECE9A800475DB9 /* TangeriaCoursework */,
+				3AD5C9A42BECE9A800475DB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AD5C9A42BECE9A800475DB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5C9A32BECE9A800475DB9 /* TangeriaCoursework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD5C9A52BECE9A800475DB9 /* TangeriaCoursework */ = {
+			isa = PBXGroup;
+			children = (
+				3AF78D592BEFAA6800556657 /* Utilities */,
+				3AF78D4F2BEF91EA00556657 /* Services */,
+				3AD5C9BF2BED1AA200475DB9 /* Pages */,
+				3AD5C9B82BECEF2000475DB9 /* Info.plist */,
+				3AD5C9B52BECEC3C00475DB9 /* Fonts */,
+				3AD5C9A62BECE9A800475DB9 /* TangeriaCourseworkApp.swift */,
+				3AD5C9B92BED04E000475DB9 /* PoppinsBold.ttf */,
+				3AF78D522BEFA46900556657 /* GoogleService-Info.plist */,
+				3AD5C9B62BECED2A00475DB9 /* PoppinsRegular.ttf */,
+				3AD5C9A82BECE9A800475DB9 /* ContentView.swift */,
+				3AD5C9AA2BECE9AA00475DB9 /* Assets.xcassets */,
+				3AD5C9AC2BECE9AA00475DB9 /* TangeriaCoursework.entitlements */,
+				3AD5C9AD2BECE9AA00475DB9 /* Preview Content */,
+				3A0B6D552BF2690A002FE984 /* .gitignore */,
+			);
+			path = TangeriaCoursework;
+			sourceTree = "<group>";
+		};
+		3AD5C9AD2BECE9AA00475DB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5C9AE2BECE9AA00475DB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AD5C9B52BECEC3C00475DB9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3AD5C9BF2BED1AA200475DB9 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5C9BD2BED0F0500475DB9 /* GetStarted.swift */,
+				3AD5C9C02BED1AC400475DB9 /* Onboarding.swift */,
+				3A015E4A2BEF6F7A00419F7F /* SignIn.swift */,
+				3AF78D442BEF801300556657 /* ForgotPassword.swift */,
+				3AF78D462BEF802F00556657 /* Signup.swift */,
+				3AF78D482BEF846B00556657 /* ResetSent.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		3AF78D4F2BEF91EA00556657 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3AF78D502BEF920D00556657 /* AuthenticationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3AF78D592BEFAA6800556657 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3AF78D5A2BEFAA8300556657 /* Utilities.swift */,
+				3AF78D5C2BEFB19100556657 /* SignInGoogleHelper.swift */,
+				3A0B6D532BF264C1002FE984 /* SessionStore.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AD5C9A22BECE9A800475DB9 /* TangeriaCoursework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD5C9B22BECE9AA00475DB9 /* Build configuration list for PBXNativeTarget "TangeriaCoursework" */;
+			buildPhases = (
+				3AD5C99F2BECE9A800475DB9 /* Sources */,
+				3AD5C9A02BECE9A800475DB9 /* Frameworks */,
+				3AD5C9A12BECE9A800475DB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TangeriaCoursework;
+			packageProductDependencies = (
+				3AF78D4D2BEF8D7400556657 /* FirebaseAuth */,
+				3AF78D552BEFA81E00556657 /* GoogleSignIn */,
+				3AF78D572BEFA81E00556657 /* GoogleSignInSwift */,
+			);
+			productName = TangeriaCoursework;
+			productReference = 3AD5C9A32BECE9A800475DB9 /* TangeriaCoursework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AD5C99B2BECE9A800475DB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					3AD5C9A22BECE9A800475DB9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 3AD5C99E2BECE9A800475DB9 /* Build configuration list for PBXProject "TangeriaCoursework" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AD5C99A2BECE9A800475DB9;
+			packageReferences = (
+				3AF78D4C2BEF8BF600556657 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3AF78D542BEFA81E00556657 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 3AD5C9A42BECE9A800475DB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AD5C9A22BECE9A800475DB9 /* TangeriaCoursework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AD5C9A12BECE9A800475DB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD5C9B72BECED2A00475DB9 /* PoppinsRegular.ttf in Resources */,
+				3AD5C9AF2BECE9AA00475DB9 /* Preview Assets.xcassets in Resources */,
+				3AF78D532BEFA46900556657 /* GoogleService-Info.plist in Resources */,
+				3AD5C9AB2BECE9AA00475DB9 /* Assets.xcassets in Resources */,
+				3A0B6D562BF2690A002FE984 /* .gitignore in Resources */,
+				3AD5C9BA2BED04E000475DB9 /* PoppinsBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AD5C99F2BECE9A800475DB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF78D472BEF802F00556657 /* Signup.swift in Sources */,
+				3AD5C9BE2BED0F0500475DB9 /* GetStarted.swift in Sources */,
+				3A0B6D542BF264C1002FE984 /* SessionStore.swift in Sources */,
+				3AD5C9A92BECE9A800475DB9 /* ContentView.swift in Sources */,
+				3AF78D512BEF920D00556657 /* AuthenticationManager.swift in Sources */,
+				3A015E4B2BEF6F7A00419F7F /* SignIn.swift in Sources */,
+				3AD5C9C12BED1AC400475DB9 /* Onboarding.swift in Sources */,
+				3AF78D5D2BEFB19100556657 /* SignInGoogleHelper.swift in Sources */,
+				3AD5C9A72BECE9A800475DB9 /* TangeriaCourseworkApp.swift in Sources */,
+				3AF78D452BEF801300556657 /* ForgotPassword.swift in Sources */,
+				3AF78D5B2BEFAA8300556657 /* Utilities.swift in Sources */,
+				3AF78D492BEF846B00556657 /* ResetSent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AD5C9B02BECE9AA00475DB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AD5C9B12BECE9AA00475DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3AD5C9B32BECE9AA00475DB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TangeriaCoursework/TangeriaCoursework.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TangeriaCoursework/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TangeriaCoursework/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = otcheredev.com.TangeriaCoursework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AD5C9B42BECE9AA00475DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TangeriaCoursework/TangeriaCoursework.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TangeriaCoursework/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TangeriaCoursework/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = otcheredev.com.TangeriaCoursework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AD5C99E2BECE9A800475DB9 /* Build configuration list for PBXProject "TangeriaCoursework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD5C9B02BECE9AA00475DB9 /* Debug */,
+				3AD5C9B12BECE9AA00475DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD5C9B22BECE9AA00475DB9 /* Build configuration list for PBXNativeTarget "TangeriaCoursework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD5C9B32BECE9AA00475DB9 /* Debug */,
+				3AD5C9B42BECE9AA00475DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AF78D4C2BEF8BF600556657 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+		3AF78D542BEFA81E00556657 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AF78D4D2BEF8D7400556657 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AF78D4C2BEF8BF600556657 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3AF78D552BEFA81E00556657 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AF78D542BEFA81E00556657 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		3AF78D572BEFA81E00556657 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AF78D542BEFA81E00556657 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3AD5C99B2BECE9A800475DB9 /* Project object */;
+}
