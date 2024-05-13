@@ -10,11 +10,11 @@ import SwiftUI
 struct FiltersView: View {
     @State private var selectedCategory: String? = "BURGERS"
     @State private var selectedDietary: String? = "ANY"
-    @State private var selectedPriceRange: String? = "$$"
+    @State private var selectedPriceRange: String? = "$90"
     
     let categories = ["ALL", "BRUNCH", "DINNER", "BURGERS", "CHINESE", "PIZZA", "SALADS", "SOUPS", "BREAKFAST"]
     let dietaryOptions = ["ANY", "VEGETARIAN", "VEGAN", "GLUTEN-FREE"]
-    let priceRanges = ["$", "$$", "$$$", "$$$$", "$$$$$"]
+    let priceRanges = ["$90", "$100", "$50", "$40", "$10"]
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
@@ -55,7 +55,7 @@ struct FiltersView: View {
                         }
                         .padding(.horizontal)
                         
-                        WrapView(data: dietaryOptions, selected: $selectedDietary)
+                        DietyWrapView(data: dietaryOptions, selected: $selectedDietary)
                         
                         // Price Range
                         HStack {
@@ -117,20 +117,63 @@ struct WrapView: View {
             let rows = Array(repeating: GridItem(.flexible(), spacing: 10), count: data.count / 3)
             LazyVGrid(columns: rows, spacing: 10) {
                 ForEach(data, id: \.self) { item in
-                    Button(action: {
-                        selected = item
-                    }) {
-                        Text(item)
-                            .font(.subheadline)
-                            .foregroundColor(selected == item ? .white : .gray)
-                            .padding([.horizontal,.vertical], 15)
-                            .background(selected == item ? Color.orange : Color(.systemGray6))
-                            .cornerRadius(8)
-                    }
+                                        Button(action: {
+                                            selected = item
+                                        }) {
+                                            Text(item)
+                                                .font(.subheadline)
+                                            
+                                                .foregroundColor(selected == item ? .white : .gray)
+                                                .padding([.horizontal], 15)
+                                                .padding(.vertical, 10)
+                                                .background(selected == item ? Color.orange : Color(.systemGray6))
+                                                .cornerRadius(8)
+                                                
+                                        }
+                                       
+                                    
                 }
             }
             .padding(.horizontal)
+           
         }
+        .frame(maxWidth: .infinity)
+        
+    }
+}
+
+
+struct DietyWrapView: View {
+    var data: [String]
+    @Binding var selected: String?
+    
+    var body: some View {
+        VStack {
+            let rows = Array(repeating: GridItem(.flexible(), spacing: 10), count: data.count/2)
+            LazyVGrid(columns: rows, spacing: 10) {
+                ForEach(data, id: \.self) { item in
+                                        Button(action: {
+                                            selected = item
+                                        }) {
+                                            Text(item)
+                                                .font(.subheadline)
+                                            
+                                                .foregroundColor(selected == item ? .white : .gray)
+                                                .padding([.horizontal], 15)
+                                                .padding(.vertical, 10)
+                                                .background(selected == item ? Color.orange : Color(.systemGray6))
+                                                .cornerRadius(8)
+                                                
+                                        }
+                                       
+                                    
+                }
+            }
+            .padding(.horizontal)
+           
+        }
+        .frame(maxWidth: .infinity)
+        
     }
 }
 
@@ -142,14 +185,20 @@ struct PriceRangeButton: View {
         Button(action: {
             selected = price
         }) {
+            
             Text(price)
                 .font(.subheadline)
+           
                 .foregroundColor(selected == price ? .white : .gray)
                 .padding()
                 .background(selected == price ? Color.orange : Color(.systemGray6))
                 .cornerRadius(8)
+                .clipShape(Circle())
+             
         }
+        
     }
+    
 }
 
 struct FiltersView_Previews: PreviewProvider {

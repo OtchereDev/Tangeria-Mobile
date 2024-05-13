@@ -46,81 +46,91 @@ struct HomePage: View {
                 Divider()
                 
                 ScrollView(showsIndicators: false){
-                    VStack{
-                        
-                        
-                        HStack{
-                            Image("image")
-                                .resizable()
-                                .scaledToFit()
+                                    
+                        VStack{
                             
-                        }
-                        
-                        HStack{
-                            Text("Featured Partners")
-                                .font(.title)
-                                .frame(maxWidth: 150)
-                                .padding(.leading, -15)
-                                .padding(.bottom, -10)
                             
-                            Spacer()
-                            Text("See all")
-                                .foregroundColor(.orange)
+                            HStack{
+                                Image("image")
+                                    .resizable()
+                                    .scaledToFit()
+                                
+                            }
                             
-                        }
-                        
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0..<10) {_ in
-                                    //Text("Item \($0)")
-                                    VStack{
-                                        Image("BG")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 240, height: 200)
-                                        
-                                        HStack{
-                                            VStack(alignment: .leading){
-                                                Text("Krispy Creme ")
-                                                    .font(.title)
-                                                    .fontWeight(.ultraLight)
-                                                Text("St Georgece Terrace, Perth")
-                                                    .font(.headline)
-                                                    .fontWeight(.light)
-                                                    .frame(maxWidth: 240)
-                                                    .padding([.top, .bottom], 0)
-                                                    .padding(.leading, -18)
-                                                HStack{
-                                                    Text("4.5")
-                                                        .padding(5)
-                                                        .frame(width: 45)
-                                                        .background(.orange)
-                                                        .foregroundColor(.white)
-                                                        .fontWeight(.bold)
-                                                        .cornerRadius(7)
-                                                        .font(.system(size: 15))
-                                                    Spacer()
-                                                    Text("25min")
-                                                    Spacer()
-                                                    Image(systemName: "circle.fill")
-                                                        .font(.system(size: 6))
-                                                        .padding([.leading, .trailing], -10)
-                                                    Text("Free delivery")
-                                                        .padding([.leading], -8)
-                                                }
-                                                .font(.system(size: 17))
-                                                .fontWeight(.ultraLight)
-                                                .padding([.top], 0.3)
+                            HStack{
+                                Text("Featured Partners")
+                                    .font(.title)
+                                    .frame(maxWidth: 150)
+                                    .padding(.leading, -15)
+                                    .padding(.bottom, -10)
+                                
+                                Spacer()
+                                Text("See all")
+                                    .foregroundColor(.orange)
+                                
+                            }
+                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 20) {
+                                    ForEach(0..<10) {_ in
+                                        //Text("Item \($0)")
+                                        NavigationLink(destination: SingleResturant().navigationBarBackButtonHidden(true) ) {
+                                            
+                                            VStack{
+                                                Image("BG")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 240, height: 200)
                                                 
+                                                HStack{
+                                                    VStack(alignment: .leading){
+                                                        Text("Krispy Creme ")
+                                                            .font(.title)
+                                                            .foregroundColor(.black)
+                                                            .fontWeight(.ultraLight)
+                                                        Text("St Georgece Terrace, Perth")
+                                                            .font(.headline)
+                                                            .fontWeight(.light)
+                                                            .frame(maxWidth: 240)
+                                                            .foregroundColor(.black)
+                                                            .padding([.top, .bottom], 0)
+                                                            .padding(.leading, -18)
+                                                        HStack{
+                                                            Text("4.5")
+                                                                .padding(5)
+                                                                .frame(width: 45)
+                                                                .background(.orange)
+                                                                .foregroundColor(.white)
+                                                                .fontWeight(.bold)
+                                                                .cornerRadius(7)
+                                                                .font(.system(size: 15))
+                                                            Spacer()
+                                                            Text("25min")
+                                                                .foregroundColor(.black)
+                                                            Spacer()
+                                                            Image(systemName: "circle.fill")
+                                                                .foregroundColor(.black)
+                                                                .font(.system(size: 6))
+                                                                .padding([.leading, .trailing], -10)
+                                                            Text(" Free delivery")
+                                                                .foregroundColor(.black)
+                                                                .padding([.leading], -8)
+                                                        }
+                                                        .font(.system(size: 17))
+                                                        .fontWeight(.ultraLight)
+                                                        .padding([.top], 0.3)
+                                                        
+                                                    }
+                                                    .frame(alignment: .leading)
+                                                }
                                             }
-                                            .frame(alignment: .leading)
                                         }
                                     }
                                 }
+                                .padding([ .trailing, .leading])
                             }
-                            .padding([ .trailing, .leading])
-                        }
-                        .padding([.trailing, .leading], -16)
+                            .padding([.trailing, .leading], -16)
+//                        }
                         
                         ZStack{
                             Image("Banner1")
