@@ -10,6 +10,7 @@
 		3A015E4B2BEF6F7A00419F7F /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A015E4A2BEF6F7A00419F7F /* SignIn.swift */; };
 		3A0B6D542BF264C1002FE984 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B6D532BF264C1002FE984 /* SessionStore.swift */; };
 		3A0B6D562BF2690A002FE984 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B6D552BF2690A002FE984 /* .gitignore */; };
+		3A0B6D582BF299DF002FE984 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B6D572BF299DF002FE984 /* String+Ext.swift */; };
 		3AD5C9A72BECE9A800475DB9 /* TangeriaCourseworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9A62BECE9A800475DB9 /* TangeriaCourseworkApp.swift */; };
 		3AD5C9A92BECE9A800475DB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5C9A82BECE9A800475DB9 /* ContentView.swift */; };
 		3AD5C9AB2BECE9AA00475DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5C9AA2BECE9AA00475DB9 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		3A015E4A2BEF6F7A00419F7F /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		3A0B6D532BF264C1002FE984 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		3A0B6D552BF2690A002FE984 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3A0B6D572BF299DF002FE984 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		3AD5C9A32BECE9A800475DB9 /* TangeriaCoursework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TangeriaCoursework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD5C9A62BECE9A800475DB9 /* TangeriaCourseworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangeriaCourseworkApp.swift; sourceTree = "<group>"; };
 		3AD5C9A82BECE9A800475DB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				3AF78D5A2BEFAA8300556657 /* Utilities.swift */,
 				3AF78D5C2BEFB19100556657 /* SignInGoogleHelper.swift */,
 				3A0B6D532BF264C1002FE984 /* SessionStore.swift */,
+				3A0B6D572BF299DF002FE984 /* String+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				3AF78D472BEF802F00556657 /* Signup.swift in Sources */,
 				3AD5C9BE2BED0F0500475DB9 /* GetStarted.swift in Sources */,
 				3A0B6D542BF264C1002FE984 /* SessionStore.swift in Sources */,
+				3A0B6D582BF299DF002FE984 /* String+Ext.swift in Sources */,
 				3AD5C9A92BECE9A800475DB9 /* ContentView.swift in Sources */,
 				3AF78D512BEF920D00556657 /* AuthenticationManager.swift in Sources */,
 				3A015E4B2BEF6F7A00419F7F /* SignIn.swift in Sources */,

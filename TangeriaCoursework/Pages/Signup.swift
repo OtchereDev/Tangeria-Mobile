@@ -7,10 +7,51 @@
 
 import SwiftUI
 
+@MainActor
+final class SignupViewModel: ObservableObject{
+    @Published var showError: Bool = false
+    @Published var authMessage: String = ""
+    @Published var isLoading: Bool = false
+    @Published  var email: String = ""
+    @Published  var password: String = ""
+
+    
+    func createUser()  {
+        guard email.isValidEmail() else{
+            authMessage = "Provide a valid email"
+            showError = true
+            return
+        }
+        
+        guard !password.isEmpty, password.isStrongPassword() else{
+            authMessage = "Provide a strong password"
+            showError = true
+            return
+        }
+        
+        isLoading = true
+        Task{
+            do{
+                try await AuthenticationManager.shared.createUser(email: email, password: password)
+                return
+            }catch{
+            }
+        }
+        
+        isLoading = false
+        
+    }
+    
+    func signInGoogle() async throws{
+        let helper   = SignInGoogleHelper()
+        let tokens  = try await helper.signIn()
+        try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
+        
+    }
+}
+
 struct Signup: View {
-    @State private var fullName: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @StateObject var viewModel =  SignupViewModel()
     
     var body: some View {
         NavigationStack {
@@ -26,31 +67,34 @@ struct Signup: View {
                    
                     .foregroundColor(.orange)
                 Spacer().frame(height: 10)
-                TextField("FULL NAME", text: $fullName)
+                
+                TextField("EMAIL ADDRESS", text: $viewModel.email)
                     .padding()
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
                 
-                TextField("EMAIL ADDRESS", text: $email)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                
-                SecureField("PASSWORD", text: $password)
+                SecureField("PASSWORD", text: $viewModel.password)
                     .padding()
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
                 
                 Button(action: {
-                    // Sign in action
+                    viewModel.createUser()
                 }) {
-                    Text("SIGN UP")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color(hex:"#eea734"))
-                        .cornerRadius(10)
+                  
+                    if viewModel.isLoading{
+                        ProgressView()
+                    }else{
+                        Text("SIGN UP")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color(hex:"#eea734"))
+                            .cornerRadius(10)
+                    }
+                }.alert(isPresented: $viewModel.showError) {
+                    Alert(title: Text("Error"), message: Text(viewModel.authMessage), dismissButton: .default(Text("OK")))
                 }
                 
                 Text("By Signing up you agree to our Terms Conditions & Privacy Policy.")
@@ -71,24 +115,15 @@ struct Signup: View {
                 }
                 .padding(.vertical)
                 
+    
                 Button(action: {
-                    // Connect with Facebook action
-                }) {
-                    HStack {
-                        Image("facebook")
-                            .foregroundColor(.white)
-                        Text("CONNECT WITH FACEBOOK")
-                            
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
+                    Task{
+                        do{
+                            try await viewModel.signInGoogle()
+                        }catch{
+                            print("error \(error)")
+                        }
                     }
-                    .padding()
-                    .background(Color(hex:"#4385f4"))
-                    .cornerRadius(10)
-                }
-                
-                Button(action: {
-                    // Connect with Google action
                 }) {
                     HStack {
                         Image("google")

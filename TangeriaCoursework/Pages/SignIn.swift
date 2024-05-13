@@ -16,19 +16,16 @@ final class SignInEmailViewModel: ObservableObject{
     @Published var errorMessage: String = ""
     @Published var isSigningIn: Bool = false
     @Published var showAlert: Bool = false
-
-    
-    private let emailRegex = try! NSRegularExpression(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}", options: .caseInsensitive)
-
     
     func signIn(){
-        guard isValidEmail(email), isValidPassword(password) else{
+        guard email.isValidEmail(), password.isEmpty else{
             errorMessage = "Please enter a valid email and password."
             showAlert = true
             return
         }
         
         isSigningIn = true
+        
         Task{
             do{
                 let returnedUserData = try await AuthenticationManager.shared.signInUser(email: self.email, password: self.password)
@@ -62,15 +59,6 @@ final class SignInEmailViewModel: ObservableObject{
             let tokens  = try await helper.signIn()
             try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
             
-        }
-        
-        func isValidEmail(_ email: String) -> Bool {
-            let range = NSRange(location: 0, length: email.utf16.count)
-            return emailRegex.firstMatch(in: email, options: [], range: range) != nil
-        }
-        
-        func isValidPassword(_ password: String) -> Bool {
-            return password.count >= 1
         }
     
 }
@@ -157,21 +145,6 @@ struct SignIn: View {
                 }
                 .padding(.vertical)
                 
-                Button(action: {
-                    // Connect with Facebook action
-                }) {
-                    HStack {
-                        Image("facebook")
-                            .foregroundColor(.white)
-                        Text("CONNECT WITH FACEBOOK")
-                            
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                    }
-                    .padding()
-                    .background(Color(hex:"#4385f4"))
-                    .cornerRadius(10)
-                }
                 
                 Button(action: {
                     Task{
