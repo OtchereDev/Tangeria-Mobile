@@ -15,8 +15,10 @@ struct FiltersView: View {
     let categories = ["ALL", "BRUNCH", "DINNER", "BURGERS", "CHINESE", "PIZZA", "SALADS", "SOUPS", "BREAKFAST"]
     let dietaryOptions = ["ANY", "VEGETARIAN", "VEGAN", "GLUTEN-FREE"]
     let priceRanges = ["$", "$$", "$$$", "$$$$", "$$$$$"]
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
+        
         NavigationView {
             VStack(alignment: .leading) {
                 ScrollView {
@@ -97,6 +99,7 @@ struct FiltersView: View {
             .navigationBarTitle("Filters")
             .navigationBarItems(leading: Button(action: {
                 // Back action
+                self.presentationMode.wrappedValue.dismiss()
             }) {
                 Image(systemName: "chevron.left")
                     .foregroundColor(.black)
@@ -120,7 +123,7 @@ struct WrapView: View {
                         Text(item)
                             .font(.subheadline)
                             .foregroundColor(selected == item ? .white : .gray)
-                            .padding()
+                            .padding([.horizontal,.vertical], 15)
                             .background(selected == item ? Color.orange : Color(.systemGray6))
                             .cornerRadius(8)
                     }
