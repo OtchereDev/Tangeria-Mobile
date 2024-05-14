@@ -39,6 +39,7 @@
 		6CD6DEE22BF2CACC000D9E58 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6DEE12BF2CACC000D9E58 /* ProfileView.swift */; };
 		6CD6DEE42BF2D609000D9E58 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6DEE32BF2D609000D9E58 /* CircularButton.swift */; };
 		6CD6DEE72BF2DB3C000D9E58 /* SingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6DEE62BF2DB3C000D9E58 /* SingleView.swift */; };
+		6CD6DEE92BF3768C000D9E58 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6DEE82BF3768C000D9E58 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		6CD6DEE12BF2CACC000D9E58 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		6CD6DEE32BF2D609000D9E58 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		6CD6DEE62BF2DB3C000D9E58 /* SingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleView.swift; sourceTree = "<group>"; };
+		6CD6DEE82BF3768C000D9E58 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0B6D5F2BF2C989002FE984 /* SingleRestaurantView.swift */,
+				6CD6DEE82BF3768C000D9E58 /* MapView.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				3AF78D512BEF920D00556657 /* AuthenticationManager.swift in Sources */,
 				3A015E4B2BEF6F7A00419F7F /* SignIn.swift in Sources */,
 				6CD6DED52BF274D8000D9E58 /* HomePage.swift in Sources */,
+				6CD6DEE92BF3768C000D9E58 /* MapView.swift in Sources */,
 				6CD6DEE72BF2DB3C000D9E58 /* SingleView.swift in Sources */,
 				3AD5C9C12BED1AC400475DB9 /* Onboarding.swift in Sources */,
 				3AF78D5D2BEFB19100556657 /* SignInGoogleHelper.swift in Sources */,
@@ -453,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TangeriaCoursework/Preview Content\"";
+				DEVELOPMENT_TEAM = SNML875W6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TangeriaCoursework/Info.plist;
@@ -490,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TangeriaCoursework/Preview Content\"";
+				DEVELOPMENT_TEAM = SNML875W6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TangeriaCoursework/Info.plist;
