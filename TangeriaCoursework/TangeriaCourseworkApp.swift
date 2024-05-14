@@ -15,7 +15,7 @@ struct TangeriaCourseworkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().font(.custom("Poppins-Regular", size: 16))
+            SplashScreen()
         }
     }
 }

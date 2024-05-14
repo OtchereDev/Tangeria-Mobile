@@ -14,20 +14,7 @@ struct ContentView: View {
         Group{
             if(AuthenticationManager.shared.currentUser != nil){
                 Group{
-                    Text("Dashboard")
-                    Button(action: {
-                        Task {
-                            do{
-                               try AuthenticationManager.shared.signOut()
-                            }catch{
-                                print("Error \(error)")
-                            }
-                        }
-                        
-
-                    }){
-                        Text("Sign Out")
-                    }
+                    HomeIndex()
                 }
                
             }else{
