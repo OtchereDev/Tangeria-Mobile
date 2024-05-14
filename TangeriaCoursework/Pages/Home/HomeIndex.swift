@@ -31,7 +31,7 @@ struct HomeIndex: View {
                         Text("Order")
                     }
                     .tag(2)
-                OrdersView()
+                ProfileView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Profile")

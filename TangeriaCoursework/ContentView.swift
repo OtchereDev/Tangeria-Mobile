@@ -13,9 +13,7 @@ struct ContentView: View {
     var body: some View {
         Group{
             if(AuthenticationManager.shared.currentUser != nil){
-                Group{
                     HomeIndex()
-                }
                
             }else{
                 GetStarted()
